@@ -1,0 +1,18 @@
+
+public class SDDDiem {
+
+	public static void main(String[] args) {
+		Diem a = new Diem(3,4);
+		a.hienThi();
+		Diem b = new Diem();
+		b.nhap();
+		b.hienThi();
+		
+		Diem c = new Diem(b.getX(), b.getY());
+		c.layDoiXung();
+		c.hienThi();
+		System.out.println("Tu B toi O : " + b.khoangCach());
+		System.out.println("Tu A den B :" + a.khoangCach(b));
+	}
+
+}
